@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AlbumListComponent } from './albums/album-list/album-list.component';
-import { AlbumCardComponent } from './albums/album-card/album-card.component';
+import { HelloComponent } from './hello/hello.component';
+import { HobbyComponent } from './hobby.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlbumListComponent,
-    AlbumCardComponent
+    HelloComponent,
+    HobbyComponent
   ],
   imports: [
     BrowserModule,
