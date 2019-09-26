@@ -12,6 +12,9 @@ import {ALBUMS} from "../albums.data";
 export class AlbumListComponent implements OnInit {
     albumsArray: Album[];
 
+    @Output()
+    albumClicked2: EventEmitter<string> = new EventEmitter<string>();
+
     constructor() {}
 
     ngOnInit(): void {
@@ -24,5 +27,7 @@ export class AlbumListComponent implements OnInit {
                 album.albumName +
                 ' was sent from the album card component'
         );
+
+        this.albumClicked2.emit(album.albumName + " " + album.id);
     }
 }

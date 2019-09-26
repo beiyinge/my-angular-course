@@ -9,8 +9,9 @@ import { Album } from './albums/album.model';
 })
 export class AppComponent {
     title = 'my angular albums';
-
-    parentFunctionHandler2(album) {
-        alert('Album ' + album.albumName);
+    albumInfo: string;
+    
+    parentFunctionHandler2($event) {
+        this.albumInfo = $event;
     }
 }
