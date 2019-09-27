@@ -8,19 +8,23 @@ import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AlbumsModule } from './albums/albums.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     NavbarComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AlbumsModule
+    AlbumsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
